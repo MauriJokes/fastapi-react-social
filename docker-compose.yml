@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  backend:
+    build: ./fast-api-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./fast-api-backend:/app
+    environment:
+      - DATABASE_URL=sqlite:///./database.db
+    restart: always
+
+  frontend:
+    build: ./fast-api-frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: always

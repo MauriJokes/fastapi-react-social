@@ -1,0 +1,278 @@
+ul {
+  list-style: none; /* Removes bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.posts-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.post-card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-card ul {
+  padding: 0;
+  margin: 0;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.username {
+  font-size: 14px;
+  color: #333;
+}
+
+.menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-dropdown button {
+  display: block;
+  width: 100%;
+  border: none;
+  color: black;
+  background: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.menu-dropdown button:hover {
+  background: #f5f5f5;
+}
+
+.caption {
+  font-size: 16px;
+  color: #222;
+  margin: 10px 0;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #555;
+  margin: 5px 0;
+  padding-left: 10px;
+}
+
+.comment-action-container {
+  display: flex;
+  gap: 4px;
+}
+
+.comment-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.comment-input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+
+.comment-edit-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.comment-button {
+  cursor: pointer;
+}
+
+.post-btn {
+  background-color: transparent;
+  color: #0095f6;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+
+/* .posts-container {
+  padding-top: 40px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 50px; 
+}
+
+.create-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.create-post input {
+  padding: 8px;
+  width: 70%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.create-post button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.post-card {
+  display: flex;
+  border: 1px solid #ddd;
+  gap: 16px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-image {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 8px;
+}
+
+.post-caption {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: lightblue;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  align-self: flex-start; 
+  margin-top: 8px;
+}
+
+.add-button:hover {
+  background: blue;
+}
+
+.delete-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  align-self: flex-end; 
+  margin-top: auto;
+}
+
+.delete-button:hover {
+  background: darkred;
+}
+
+.comments-section {
+  margin-top: px;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment p {
+  margin: 0;
+}
+
+.comment button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.file-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.file-input-container input[type="file"] {
+  margin-bottom: 10px;
+} */
