@@ -2,7 +2,7 @@
 
 SocialHub is a full-stack social media application that allows users to create, edit, and delete posts with image uploads. Users can also comment on posts, edit and delete comments, and manage their accounts. The project is built using **FastAPI** for the backend and **React.js** for the frontend, with **Docker** for containerization and **AWS** for deployment.
 
-## 🛠️ Tech Stack
+## 🛠️ Live Deployment
 
 This application is live at: (http://54.169.158.27/)
 
@@ -42,7 +42,7 @@ This application is live at: (http://54.169.158.27/)
 ## 📂 Project Structure
 
 ```
-/fastapi-backend
+/fast-api-backend
 │── main.py                 # FastAPI app entry point
 │── models.py               # Database models
 │── controller/             # API Logic
@@ -54,7 +54,7 @@ This application is live at: (http://54.169.158.27/)
 │── .venv                   # Virtual environment set up
 │── requirements.txt        # Backend dependencies
 
-/frontend
+/fast-api-frontend
 │── src/
 │   ├── components/         # Reusable React components
 │   ├── helpers/            # Reusable helper functions
@@ -80,7 +80,7 @@ cd fastapi-react-social
 ### 2️⃣ Backend Setup
 
 ```bash
-cd fastapi-backend
+cd fast-api-backend
 python -m venv venv
 source venv/bin/activate  # On Windows use `venv\Scripts\activate`
 pip install -r requirements.txt # Or pip freeze > requirements.txt
@@ -90,7 +90,7 @@ uvicorn main:app --reload
 ### 3️⃣ Frontend Setup
 
 ```bash
-cd ../frontend
+cd fast-api-frontend
 npm install
 npm install --global yarn
 yarn
