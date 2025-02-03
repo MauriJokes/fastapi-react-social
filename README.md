@@ -4,7 +4,7 @@ SocialHub is a full-stack social media application that allows users to create, 
 
 ## Live Deployment
 
-This application is live at: (http://54.169.158.27/)
+This application is live at: http://54.169.158.27/
 
 ## 🚀 Features
 
@@ -117,7 +117,7 @@ docker-compose up --build
 | GET    | `/comments/list`  | Get all comments                       | ✅ Yes        |
 | DELETE | `/comments/{id}`  | Delete a comment                       | ✅ Yes        |
 
-For more information, visit (http://127.0.0.1:8000/docs) to see the Swagger UI once you run the app. Alternatively, you can visit (http://54.169.158.27:8000/docs) for the live Swagger UI.
+For more information, visit http://127.0.0.1:8000/docs to see the Swagger UI once you run the app. Alternatively, you can visit http://54.169.158.27:8000/docs for the live Swagger UI.
 
 ## 🚀 Deployment
 
@@ -151,6 +151,8 @@ For more information, visit (http://127.0.0.1:8000/docs) to see the Swagger UI o
 - ✅ Improve UI with better animations
 - ✅ Implement WebSocket for real-time updates
 - ✅ Switch to PostgreSQL for production
+- ✅ Purchase a domain name
+- ✅ Setting Up a Domain and Securing API with HTTPS on AWS
 
 ---
 
