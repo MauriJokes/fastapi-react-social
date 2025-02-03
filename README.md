@@ -2,7 +2,7 @@
 
 SocialHub is a full-stack social media application that allows users to create, edit, and delete posts with image uploads. Users can also comment on posts, edit and delete comments, and manage their accounts. The project is built using **FastAPI** for the backend and **React.js** for the frontend, with **Docker** for containerization and **AWS** for deployment.
 
-## 🛠️ Live Deployment
+## Live Deployment
 
 This application is live at: (http://54.169.158.27/)
 
@@ -131,19 +131,19 @@ For more information, visit (http://127.0.0.1:8000/docs) to see the Swagger UI o
 
    - `.env` for backend (JWT secret, database URL, etc.)
 
-     ```bash
+      ```bash
      SECRET_KEY=1dFwfDk4OxUrDpJAV6cxdGQFz9MjN7NYldVqFbK2DOFvhU4XJPT2HqKqjsy5YoS/
      ALGORITHM=HS256
      ACCESS_TOKEN_EXPIRE_MINUTES=1440
      DATABASE_URL=sqlite:///./database.db
-     ```
+      ```
 
    - `.env` for frontend (API base URL)
 
-   ```bash
+      ```bash
       REACT_APP_API_URL=http://127.0.0.1:8000
       REACT_APP_ENV=development
-   ```
+      ```
 
 ## 📝 Future Improvements
 
