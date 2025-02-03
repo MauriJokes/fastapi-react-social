@@ -6,7 +6,9 @@ from datetime import datetime, timedelta
 from fastapi.security import OAuth2PasswordBearer
 from passlib.context import CryptContext
 from typing import Optional
+from dotenv import load_dotenv
 from database import get_db
+import os
 
 router = APIRouter()
 
@@ -17,9 +19,10 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 
 # Secret key and algorithm used for JWT encoding
-SECRET_KEY = "your_secret_key_here"  # Replace with your actual secret key
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 1440  # Expiration time for JWT token
+load_dotenv()
+SECRET_KEY = os.getenv('SECRET_KEY')  # Replace with your actual secret key
+ALGORITHM = os.getenv('ALGORITHM')
+ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv('ACCESS_TOKEN_EXPIRE_MINUTES'))  # Expiration time for JWT token
 
 # Hash a plain text password
 def hash_password(password: str) -> str:
