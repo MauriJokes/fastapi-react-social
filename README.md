@@ -4,7 +4,7 @@ SocialHub is a full-stack social media application that allows users to create, 
 
 ## Live Deployment
 
-This application is live at: http://54.169.158.27/
+This application is live at: http://18.143.65.16
 
 ## 🚀 Features
 
