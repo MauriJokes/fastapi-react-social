@@ -117,7 +117,7 @@ docker-compose up --build
 | GET    | `/comments/list`  | Get all comments                       | ✅ Yes        |
 | DELETE | `/comments/{id}`  | Delete a comment                       | ✅ Yes        |
 
-For more information, visit http://127.0.0.1:8000/docs to see the Swagger UI once you run the app. Alternatively, you can visit http://54.169.158.27:8000/docs for the live Swagger UI.
+For more information, visit http://127.0.0.1:8000/docs to see the Swagger UI once you run the app. Alternatively, you can visit http://18.143.65.16:8000/docs for the live Swagger UI.
 
 ## 🚀 Deployment
 
